@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #111, #000);
+  color: #d4af37;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  text-align: center;
+  padding: 30px 15px;
+  border-bottom: 1px solid rgba(212,175,55,0.3);
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* LIVE TV ANIMATION */
+.live {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,0,0,0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(255,0,0,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,0,0,0); }
+}
+
+/* ---------- CONTENT ---------- */
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+.app-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(212,175,55,0.2);
+  transition: transform 0.3s;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.btn {
+  display: block;
+  margin: 12px 0;
+  padding: 14px;
+  background: linear-gradient(135deg, #d4af37, #f7e27d);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 13px;
+  color: #aaa;
+  border-top: 1px solid rgba(212,175,55,0.3);
+}
